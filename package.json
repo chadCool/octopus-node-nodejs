@@ -1,0 +1,30 @@
+{
+  "name": "@octopuses/octopus-node",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "bin": {"octopus": "./lib/startServer.js"},
+  "files": ["/lib"],
+  "scripts": {
+    "dev": "node ./lib/startServer.js",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "keywords": [
+    "octopus",
+    "nodejs"
+  ],
+  "author": "Chad",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "prettier": "^1.19.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.4"
+  }
+}
